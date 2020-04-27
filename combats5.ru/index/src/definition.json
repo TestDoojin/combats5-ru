@@ -1,0 +1,37 @@
+{
+  "name" : "index",
+  "title" : "combats5.ru",
+  "uri" : "www.combats5.ru",
+  "userInterface" : {
+    "themeName" : "mediaBlog",
+    "resourcesHost" : "https://bc.marfeelcache.com",
+    "lang" : "en",
+    "features" : {
+      "useUiJson" : true,
+      "useMetricsJson" : true,
+      "useInventoryJsonInTouch" : true,
+      "twisterJavaEnabled" : true,
+      "forceXL" : true,
+      "useInventoryAds" : "remote",
+      "enableAdDealerInMosaic" : true,
+      "lateralMenuShareOptions" : true
+    }
+  },
+  "configuration" : {
+    "whiteCollarScript" : "index/src/whiteCollar/main.js",
+    "cronRefresh" : "0 1 0 1/1 * ? *",
+    "feedRipper" : "puppeteerRipper"
+  },
+  "sectionDefinitions" : [ {
+    "name" : "home",
+    "styles" : "photo",
+    "title" : "Home",
+    "feedDefinitions" : [ {
+      "uri" : "http://www.combats5.ru",
+      "alibabaDefinition" : { }
+    } ],
+    "configuration" : {
+      "cronRefresh" : "0 0/3 * 1/1 * ? *"
+    }
+  } ]
+}
