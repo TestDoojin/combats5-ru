@@ -1,0 +1,6 @@
+{
+  "name" : "mediaBlog",
+  "tenantName" : "www.combats5.ru",
+  "useLayoutDescriptor" : true,
+  "core" : false
+}
